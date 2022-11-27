@@ -1,0 +1,44 @@
+.footer {
+  color: $darkBackgroundText;
+  background-color: $darkBG;
+  text-align: left;
+  padding: 60px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__address {
+    font-style: normal;
+    color: $darkBackgroundText;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+  }
+}
+
+.footer__contact {
+  a {
+    color: $darkBackgroundText;
+    opacity: 0.6;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color $transitionDefault;
+
+    &:hover,
+    &:focus {
+      color: $brandColor;
+      fill: $brandColor;
+    }
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}

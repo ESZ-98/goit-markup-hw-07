@@ -1,0 +1,26 @@
+.header__webstudio,
+.footer__webstudio {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 93px;
+}
+
+.header__webstudio > span,
+.footer__webstudio > span {
+  color: $brandColor;
+}
+
+.header__webstudio--dark {
+  color: $brightBackgroundText;
+}
+
+.footer__webstudio--light {
+  color: $darkBackgroundText;
+  margin-right: 0px;
+}

@@ -1,0 +1,32 @@
+.header__navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  position: relative;
+
+  ul {
+    display: flex;
+
+    & :not(:last-child) {
+      margin-right: 46px;
+    }
+  }
+
+  a {
+    color: $textPrimary;
+    text-decoration: none;
+    transition: color $transitionDefault;
+
+    &:hover,
+    &:focus {
+      color: $brandColor;
+    }
+  }
+}
+
+.header__navigation .header__block {
+  color: $brandColor;
+}

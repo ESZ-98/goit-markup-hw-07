@@ -1,0 +1,32 @@
+.lorem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    background: $brightBG;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 102px;
+  }
+
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &__text {
+    color: $textSecondary;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    padding: 0;
+    width: 270px;
+  }
+}

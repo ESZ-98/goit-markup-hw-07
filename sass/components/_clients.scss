@@ -1,0 +1,22 @@
+.our-clients {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  &__icon {
+    border: 1px solid $defaultPreHover;
+    height: 92px;
+    width: 170px;
+    padding: 16px 32px;
+    border-radius: 3px;
+    cursor: pointer;
+    fill: $defaultPreHover;
+    transition: color, border, fill $transitionDefault;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $brandColor;
+      fill: $brandColor;
+    }
+  }
+}
