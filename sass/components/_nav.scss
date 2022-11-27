@@ -7,7 +7,7 @@
   margin-bottom: 32px;
   position: relative;
 
-  ul {
+  .header__pages {
     display: flex;
 
     & :not(:last-child) {
@@ -15,7 +15,7 @@
     }
   }
 
-  a {
+  .header__site {
     color: $textPrimary;
     text-decoration: none;
     transition: color $transitionDefault;
@@ -25,8 +25,8 @@
       color: $brandColor;
     }
   }
-}
 
-.header__navigation .header__block {
-  color: $brandColor;
+  .header__block {
+    color: $brandColor;
+  }
 }

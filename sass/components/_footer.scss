@@ -17,28 +17,27 @@
     letter-spacing: 0.03em;
     margin-top: 20px;
   }
-}
 
-.footer__contact {
-  a {
-    color: $darkBackgroundText;
-    opacity: 0.6;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    transition: color $transitionDefault;
-
-    &:hover,
-    &:focus {
-      color: $brandColor;
-      fill: $brandColor;
+  &__contact {
+    .footer__communication {
+      &:not(:last-child) {
+        margin-bottom: 9px;
+      }
     }
-  }
+    .footer__resources {
+      color: $darkBackgroundText;
+      opacity: 0.6;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      transition: color $transitionDefault;
 
-  li {
-    &:not(:last-child) {
-      margin-bottom: 9px;
+      &:hover,
+      &:focus {
+        color: $brandColor;
+        fill: $brandColor;
+      }
     }
   }
 }

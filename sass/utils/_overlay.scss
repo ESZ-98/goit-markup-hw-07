@@ -1,3 +1,7 @@
+.porfolio__figure:hover .portfolio__overlay {
+  transform: translateY(0);
+}
+
 .portfolio__overlay {
   position: absolute;
   top: 0;
@@ -8,20 +12,16 @@
   opacity: 0.9;
   transform: translateY(100%);
   transition: transform $transitionDefault;
-
-  p {
-    color: $darkBackgroundText;
-    letter-spacing: 0.03em;
-    font-size: 18px;
-    line-height: 1.56;
-    text-align: left;
-    padding-left: 24px;
-    padding-right: 45px;
-    padding-top: 31px;
-    width: 370px;
-  }
 }
 
-figure:hover .portfolio__overlay {
-  transform: translateY(0);
+.portfolio__info {
+  color: $darkBackgroundText;
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: left;
+  padding-left: 24px;
+  padding-right: 45px;
+  padding-top: 31px;
+  width: 370px;
 }

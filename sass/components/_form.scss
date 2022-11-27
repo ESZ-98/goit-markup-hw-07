@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
 
-  p {
+ .modal__section {
     color: $textSecondary;
     font-size: 12px;
     line-height: 1.16;
@@ -25,17 +25,17 @@
     margin-bottom: 4px;
   }
 
-  svg {
+  .modal__icon {
     z-index: 1;
     fill: $textPrimary;
     transition: fill $transitionDefault;
   }
 
-  a {
+  .modal__link {
     color: $brandColor;
   }
 
-  textarea {
+  .modal__textarea {
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -68,8 +68,8 @@
 }
 
 .modal__input:focus-within,
-.modal__form textarea:focus-within,
-.modal__wrapper:focus-within svg {
+.modal__form .modal__textarea:focus-within,
+.modal__wrapper:focus-within .modal__icon {
   border-color: $brandColor;
   fill: $brandColor;
   outline-width: 0;

@@ -21,19 +21,23 @@
     <header class="header">
       <div class="container">
         <a href="index.html" class="header__webstudio header__webstudio--dark"
-          ><span>Web</span>Studio</a
+          ><span class="header__brand">Web</span>Studio</a
         >
         <nav class="header__navigation">
-          <ul>
-            <li><a class="header__block header__block--index" href="index.html">Agencja</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="#">Kontakt</a></li>
+          <ul class="header__pages">
+            <li>
+              <a class="header__site header__block header__block--index" href="index.html"
+                >Agencja</a
+              >
+            </li>
+            <li><a class="header__site" href="portfolio.html">Portfolio</a></li>
+            <li><a class="header__site" href="#">Kontakt</a></li>
           </ul>
         </nav>
         <div class="header__contact">
-          <ul>
+          <ul class="header__list">
             <li>
-              <a href="mailto:info@devstudio.com">
+              <a class="header__communication" href="mailto:info@devstudio.com">
                 <svg style="height: 12px; width: 16px; margin-right: 10px">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -41,7 +45,7 @@
               >
             </li>
             <li>
-              <a href="tel:+48111111111">
+              <a class="header__communication" href="tel:+48111111111">
                 <svg style="height: 16px; width: 10px; margin-right: 10px">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -117,7 +121,7 @@
       <div class="our-tasks">
         <div class="container">
           <h2 class="our-tasks__title">Czym się zajmujemy</h2>
-          <ul>
+          <ul class="our-tasks__list">
             <li>
               <img
                 src="./images/box1.jpg"
@@ -153,7 +157,7 @@
           <h2 class="our-team__title">Nasz zespół</h2>
           <ul class="our-team__box">
             <li>
-              <figure>
+              <figure class="our-team__figure">
                 <img src="./images/john1.jpg" alt="John Doe the First" width="270" height="260" />
                 <figcaption class="our-team__function">
                   <h3 class="our-team__member">John Doe</h3>
@@ -184,7 +188,7 @@
               </figure>
             </li>
             <li>
-              <figure>
+              <figure class="our-team__figure">
                 <img src="./images/jane.jpg" alt="John Doe the Second" width="270" height="260" />
                 <figcaption class="our-team__function">
                   <h3 class="our-team__member">John Doe</h3>
@@ -215,7 +219,7 @@
               </figure>
             </li>
             <li>
-              <figure>
+              <figure class="our-team__figure">
                 <img src="./images/john2.jpg" alt="John Doe the Third" width="270" height="260" />
                 <figcaption class="our-team__function">
                   <h3 class="our-team__member">John Doe</h3>
@@ -246,7 +250,7 @@
               </figure>
             </li>
             <li>
-              <figure>
+              <figure class="our-team__figure">
                 <img src="./images/john3.jpg" alt="John Doe the Fourth" width="270" height="260" />
                 <figcaption class="our-team__function">
                   <h3 class="our-team__member">John Doe</h3>
@@ -319,12 +323,18 @@
       <div class="container">
         <div>
           <a class="footer__webstudio footer__webstudio--light" href="index.html"
-            ><span>Web</span>Studio</a
+            ><span class="header__brand">Web</span>Studio</a
           >
           <ul class="footer__contact">
-            <li><address class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</address></li>
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
-            <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+            <li class="footer__communication">
+              <address class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</address>
+            </li>
+            <li class="footer__communication">
+              <a class="footer__resources" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="footer__communication">
+              <a class="footer__resources" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
           </ul>
         </div>
         <div>
@@ -354,9 +364,9 @@
         </div>
         <div class="newsletter">
           <h4 class="newsletter__title">Zapisz się do newslettera</h4>
-          <form>
+          <form class="newsletter__form">
             <label>
-              <input type="email" name="email" placeholder="E-mail" />
+              <input type="email" name="email" placeholder="E-mail" class="newsletter__input" />
             </label>
             <button class="newsletter__button" type="button">
               Zapisz się
@@ -386,46 +396,60 @@
         <form class="modal__form">
           <h2 class="modal__title">Zostaw swoje dane w formularzu poniżej</h2>
           <label>
-            <p>Imię</p>
+            <p class="modal__section">Imię</p>
             <div class="modal__wrapper">
-              <svg style="width: 18px; height: 18px; position: absolute; margin: 11px 0 11px 12px">
+              <svg
+                class="modal__icon"
+                style="width: 18px; height: 18px; position: absolute; margin: 11px 0 11px 12px"
+              >
                 <use href="./images/icons.svg#icon-modal-user"></use>
               </svg>
               <input class="modal__input" type="text" name="name" />
             </div>
           </label>
           <label>
-            <p>Telefon</p>
+            <p class="modal__section">Telefon</p>
             <div class="modal__wrapper">
-              <svg style="width: 18px; height: 18px; position: absolute; margin: 11px 0 11px 12px">
+              <svg
+                class="modal__icon"
+                style="width: 18px; height: 18px; position: absolute; margin: 11px 0 11px 12px"
+              >
                 <use href="./images/icons.svg#icon-modal-phone"></use>
               </svg>
               <input class="modal__input" type="tel" name="phone_number" />
             </div>
           </label>
           <label>
-            <p>Email</p>
+            <p class="modal__section">Email</p>
             <div class="modal__wrapper">
-              <svg style="width: 18px; height: 18px; position: absolute; margin: 11px 0 11px 12px">
+              <svg
+                class="modal__icon"
+                style="width: 18px; height: 18px; position: absolute; margin: 11px 0 11px 12px"
+              >
                 <use href="./images/icons.svg#icon-modal-mail"></use>
               </svg>
               <input class="modal__input" type="email" name="email" />
             </div>
           </label>
           <label>
-            <p>Komentarz</p>
-            <textarea placeholder="Wprowadź tekst" name="comment"></textarea>
+            <p class="modal__section">Komentarz</p>
+            <textarea
+              class="modal__textarea"
+              placeholder="Wprowadź tekst"
+              name="comment"
+            ></textarea>
           </label>
-          <label class="modal_consent">
-            <input type="checkbox" name="modal_consent-checkbox" />
-            <span>
+          <label class="modal__consent">
+            <input type="checkbox" name="modal__consent-checkbox" class="modal__checkbox" />
+            <span class="modal__span">
               <svg
+                class="modal__svg"
                 style="height: 15px; width: 16px; position: absolute; margin: -7px -7px -7px -22px"
               >
                 <use href="./images/icons.svg#icon-modal-checkmark"></use>
               </svg>
-              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-              <a href="">Politykę Prywatności</a>.
+              Oświadczam iż akceptuję <a class="modal__link" href="#">Regulamin</a> i
+              <a class="modal__link" href="">Politykę Prywatności</a>.
             </span>
           </label>
           <button class="modal__button" type="submit">Wyślij</button>

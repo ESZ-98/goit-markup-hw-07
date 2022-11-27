@@ -66,12 +66,10 @@
 // PORTFOLIO
 
 .selection-buttons {
-  ul {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
 
-  button {
+  &__button {
     font-weight: 500;
     line-height: 1.625;
     text-align: center;

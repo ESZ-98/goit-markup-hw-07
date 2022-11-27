@@ -1,4 +1,4 @@
-.modal_consent {
+.modal__consent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
   cursor: pointer;
   margin-left: 24px;
 
-  svg {
+  .modal__svg {
     position: absolute;
     height: 15px;
     width: 16px;
@@ -22,14 +22,14 @@
     transition: border, background-color $transitionDefault;
   }
 
-  input {
+  .modal__checkbox {
     position: absolute;
     cursor: pointer;
     width: 0;
     height: 0;
     opacity: 0;
 
-    &:checked ~ span svg {
+    &:checked ~ .modal__span .modal__svg {
       border: none;
       border-radius: 2px;
       background-color: $brandColor;
